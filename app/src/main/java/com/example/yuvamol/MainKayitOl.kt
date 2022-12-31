@@ -1,5 +1,6 @@
 package com.example.yuvamol
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -34,5 +35,9 @@ binding.epostakayit.text.clear()
             binding.isimkayit.text.clear()
             binding.soyisimkayit.text.clear()
         }
+        binding.girisedon.setOnClickListener {
+            intent = Intent(applicationContext,MainActivity::class.java)
+            startActivity(intent)
     }
+}
 }

@@ -7,19 +7,15 @@
     android:background="@color/purple_200"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/giris"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="304dp"
-        android:layout_marginBottom="188dp"
-        android:text="@string/giri_yap"
-        android:textColor="#81D4FA"
-        app:layout_constraintBottom_toTopOf="@+id/kayit1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.485"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        android:src="@drawable/backgroundyuvamol"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp" />
 
     <Button
         android:id="@+id/kayit1"
@@ -30,10 +26,9 @@
         android:text="@string/kay_t_ol"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <EditText
         android:id="@+id/epostagiris"
@@ -41,10 +36,12 @@
         android:layout_height="wrap_content"
         android:autofillHints=""
         android:background="@drawable/textarkaplan"
+        android:drawableLeft="@drawable/emaill"
         android:ems="10"
         android:hint="@string/e_posta"
         android:inputType="textPersonName"
         android:minHeight="48dp"
+        android:textColor="@color/black"
         android:textColorHint="@color/black"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -52,27 +49,59 @@
         app:layout_constraintHorizontal_bias="0.388"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.22" />
+        app:layout_constraintVertical_bias="0.499" />
 
     <EditText
         android:id="@+id/sifregiris"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="216dp"
-        android:layout_marginBottom="40dp"
+        android:layout_marginTop="404dp"
         android:autofillHints=""
         android:background="@drawable/textarkaplan"
+        android:drawableLeft="@drawable/lock"
         android:ems="10"
         android:hint="@string/ifre"
         android:inputType="textPersonName"
         android:minHeight="48dp"
+        android:textColor="@color/black"
         android:textColorHint="@color/black"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/giris"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.388"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/giris"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="140dp"
+        android:text="Giriş Yap"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="188dp"
+        android:layout_height="274dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:srcCompat="@drawable/yuvamolg" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="104dp"
+        android:layout_marginBottom="116dp"
+        android:text="Hesabın yok mu? Hemen kayıt ol."
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
