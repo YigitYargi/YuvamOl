@@ -19,6 +19,13 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
       preferences=getSharedPreferences("kullanicibilgileri", MODE_PRIVATE)
 
+
+        binding.sifremiunuttum.setOnClickListener {
+
+            intent = Intent(applicationContext,MainSifremiUnuttum::class.java)
+            startActivity(intent)
+        }
+
         binding.kayit1.setOnClickListener {
 
             intent = Intent(applicationContext,MainKayitOl::class.java)
