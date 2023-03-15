@@ -4,24 +4,16 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.yuvamol.databinding.ActivityMainGirisSonrasiBinding
-import com.example.yuvamol.databinding.ActivityMainKayitOlBinding
+import com.example.yuvamol.databinding.ActivityMainHayvanEklemeBinding
+import com.example.yuvamol.databinding.ActivityMainIlgilenilenHayvanlarBinding
 
-class MainGirisSonrasi : AppCompatActivity() {
+class MainIlgilenilenHayvanlar : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main_giris_sonrasi)
-        val binding = ActivityMainGirisSonrasiBinding.inflate(layoutInflater)
+        setContentView(R.layout.activity_main_ilgilenilen_hayvanlar)
+
+        val binding = ActivityMainIlgilenilenHayvanlarBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        binding.girisedon.setOnClickListener {
-            intent = Intent(applicationContext,MainActivity::class.java)
-            startActivity(intent)
-        }
-
-        binding.filtreleme1.setOnClickListener {
-            intent = Intent(applicationContext,MainBakiciFiltreleme::class.java)
-            startActivity(intent)
-        }
-
         binding.profil.setOnClickListener {
             intent = Intent(applicationContext,MainProfilDuzenleme::class.java)
             startActivity(intent)

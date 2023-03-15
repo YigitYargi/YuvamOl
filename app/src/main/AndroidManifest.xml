@@ -13,6 +13,35 @@
         android:theme="@style/Theme.YuvamOl"
         tools:targetApi="31">
         <activity
+            android:name=".MainHayvanEkleme"
+            android:exported="false" />
+        <activity
+            android:name=".MainEvcilHayvanlarim"
+            android:exported="false" />
+        <activity
+            android:name=".MainAyarlar"
+            android:exported="false" />
+        <activity
+            android:name=".MainIlgilenilenHayvanlar"
+            android:exported="false" />
+        <activity
+            android:name=".Mainbakicilistesi"
+            android:exported="false" />
+        <activity
+            android:name=".MainBakiciFiltreleme"
+            android:exported="false" />
+        <activity
+            android:name=".ScrollingActivity"
+            android:exported="false"
+            android:label="@string/title_activity_scrolling"
+            android:theme="@style/Theme.YuvamOl.NoActionBar" />
+        <activity
+            android:name=".ProfilDuzenleme2"
+            android:exported="false" />
+        <activity
+            android:name=".MainProfilDuzenleme"
+            android:exported="false" />
+        <activity
             android:name=".MainSifremiUnuttum"
             android:exported="false">
             <meta-data

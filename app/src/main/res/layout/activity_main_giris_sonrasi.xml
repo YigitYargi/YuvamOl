@@ -7,28 +7,39 @@
     android:background="@color/teal_200"
     tools:context=".MainGirisSonrasi">
 
+
     <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="48dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="180dp"
+        android:id="@+id/imagegirissonrasi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg22"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <ImageView
+        android:id="@+id/profil"
+        android:layout_width="43dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="172dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/account" />
 
     <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="67dp"
-        android:layout_height="29dp"
-        android:layout_marginStart="124dp"
+        android:id="@+id/mesaj"
+        android:layout_width="61dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="135dp"
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_baseline_message_24" />
 
     <ImageView
-        android:id="@+id/imageView8"
+        android:id="@+id/evcilhayvanlar"
         android:layout_width="30dp"
         android:layout_height="32dp"
         android:layout_marginTop="16dp"
@@ -38,9 +49,9 @@
         app:srcCompat="@drawable/paw2" />
 
     <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="56dp"
-        android:layout_height="29dp"
+        android:id="@+id/ayarlar"
+        android:layout_width="51dp"
+        android:layout_height="35dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -48,26 +59,17 @@
         app:srcCompat="@drawable/settings" />
 
     <ImageView
-        android:id="@+id/imageView10"
+        android:id="@+id/anasayfa"
         android:layout_width="35dp"
         android:layout_height="51dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="80dp"
+        android:layout_marginEnd="75dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/home" />
 
-    <ImageView
-        android:id="@+id/imageView11"
-        android:layout_width="102dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="16dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/yuvamolg" />
-
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/filtreleme1"
         android:layout_width="336dp"
         android:layout_height="52dp"
         android:layout_marginStart="36dp"
@@ -81,6 +83,7 @@
         android:textColor="@color/black"
         android:textColorHint="@color/black"
         android:textSize="20sp"
+        android:clickable="true"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -184,7 +187,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/talepbuton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="396dp"
@@ -214,5 +217,15 @@
         android:text="Girişe Dön"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/bakici"
+        android:layout_width="47dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="292dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bakicilogo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

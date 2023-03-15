@@ -46,9 +46,9 @@ class MainActivity : AppCompatActivity() {
 
             }
             else {
-                Toast.makeText(applicationContext, "Giriş bilgileri hatalı",Toast.LENGTH_LONG).show()
+                Toast.makeText(applicationContext,"Giriş bilgileri hatalı",Toast.LENGTH_LONG).show()
 
-                //setContentView(R.layout.activity_main)
+
 
             }
         }
