@@ -34,5 +34,10 @@ class Mainbakicilistesi : AppCompatActivity() {
             startActivity(intent)
         }
 
+        binding.ilgilihayvanlar.setOnClickListener {
+            intent = Intent(applicationContext,MainIlgilenilenHayvanlar::class.java)
+            startActivity(intent)
+        }
+
     }
 }

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/teal_200"
-    tools:context=".MainIlgilenilenHayvanlar">
+    tools:context=".MainGeciciHayvanlar">
 
 
     <ImageView
@@ -72,9 +72,9 @@
         android:id="@+id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="96dp"
-        android:layout_marginEnd="156dp"
-        android:text="Evcil Hayvanlarım"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="44dp"
+        android:text="Geçici Yuvadaki Hayvanlarım"
         android:textColor="@color/black"
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -101,24 +101,44 @@
         app:srcCompat="@drawable/evcil2" />
 
     <Button
-        android:id="@+id/incele1"
+        android:id="@+id/durumuincele1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="240dp"
         android:layout_marginEnd="248dp"
-        android:text="Detaylı incele"
+        android:text="Durumu incele"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/incele2"
+        android:id="@+id/durumuincele2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="240dp"
         android:layout_marginEnd="64dp"
-        android:text="Detaylı incele"
+        android:text="Durumu incele"
         android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/aktiflestir1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="304dp"
+        android:layout_marginEnd="244dp"
+        android:text="Aktifleştir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/aktiflestir2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="304dp"
+        android:layout_marginEnd="68dp"
+        android:text="Aktifleştir"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

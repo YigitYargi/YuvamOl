@@ -35,5 +35,14 @@ class MainIlgilenilenHayvanlar : AppCompatActivity() {
             intent = Intent(applicationContext,MainGirisSonrasi::class.java)
             startActivity(intent)
         }
+        binding.incele1.setOnClickListener {
+            intent = Intent(applicationContext,MainHayvanBilgileri::class.java)
+            startActivity(intent)
+        }
+        binding.incele2.setOnClickListener {
+            intent = Intent(applicationContext,MainHayvanBilgileri::class.java)
+            startActivity(intent)
+        }
+
     }
 }

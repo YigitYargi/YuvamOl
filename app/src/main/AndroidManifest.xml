@@ -13,6 +13,18 @@
         android:theme="@style/Theme.YuvamOl"
         tools:targetApi="31">
         <activity
+            android:name=".MainDurumTespiti"
+            android:exported="false" />
+        <activity
+            android:name=".MainHayvaninDurumu"
+            android:exported="false" />
+        <activity
+            android:name=".MainGeciciHayvanlar"
+            android:exported="false" />
+        <activity
+            android:name=".MainHayvanBilgileri"
+            android:exported="false" />
+        <activity
             android:name=".MainHayvanEkleme"
             android:exported="false" />
         <activity
