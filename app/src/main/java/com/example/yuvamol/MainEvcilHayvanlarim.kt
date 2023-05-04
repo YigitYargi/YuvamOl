@@ -49,6 +49,9 @@ class MainEvcilHayvanlarim : AppCompatActivity() {
             intent = Intent(applicationContext,MainGeciciHayvanlar::class.java)
             startActivity(intent)
         }
-
+        binding.mesaj.setOnClickListener {
+            intent = Intent(applicationContext,MainMesaj::class.java)
+            startActivity(intent)
+        }
     }
 }

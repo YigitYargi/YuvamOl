@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "455711198041",
+    "project_id": "yuvamol-68d17",
+    "storage_bucket": "yuvamol-68d17.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:455711198041:android:00dc6dc63d607af8229a48",
+        "android_client_info": {
+          "package_name": "com.example.yuvamol"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "455711198041-nemk4i50rdjbjpb493992efdaeq15bc6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.yuvamol",
+            "certificate_hash": "af13cc6d733555b74c2296c3f78e91dd8471da1b"
+          }
+        },
+        {
+          "client_id": "455711198041-fsfsarg1u7l6pgjc47nqmvc2iqi8iju2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhew_3okCJFGJfcbLgbT81g6Gp0yBHeJo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "455711198041-fsfsarg1u7l6pgjc47nqmvc2iqi8iju2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

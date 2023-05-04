@@ -1,23 +1,29 @@
-package com.example.yuvamol
 
+package com.example.yuvamol
+import com.example.yuvamol.Database
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.content.SharedPreferences
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.LayoutInflater
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.example.yuvamol.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
     lateinit var preferences: SharedPreferences
+    lateinit var db: Database
+
+
     @SuppressLint("SuspiciousIndentation")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-      preferences=getSharedPreferences("kullanicibilgileri", MODE_PRIVATE)
+
+        // db = Database()
+
+        preferences=getSharedPreferences("kullanicibilgileri", MODE_PRIVATE)
 
 
         binding.sifremiunuttum.setOnClickListener {
@@ -31,6 +37,8 @@ class MainActivity : AppCompatActivity() {
             intent = Intent(applicationContext,MainKayitOl::class.java)
             startActivity(intent)
         }
+
+
         binding.giris.setOnClickListener {
 
             var kullanicieposta = preferences.getString("eposta","")
@@ -53,5 +61,5 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        }
+    }
 }

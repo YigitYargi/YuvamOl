@@ -43,6 +43,9 @@ class MainIlgilenilenHayvanlar : AppCompatActivity() {
             intent = Intent(applicationContext,MainHayvanBilgileri::class.java)
             startActivity(intent)
         }
-
+        binding.mesaj.setOnClickListener {
+            intent = Intent(applicationContext,MainMesaj::class.java)
+            startActivity(intent)
+        }
     }
 }

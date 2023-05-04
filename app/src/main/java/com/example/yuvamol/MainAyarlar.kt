@@ -33,6 +33,9 @@ class MainAyarlar : AppCompatActivity() {
             intent = Intent(applicationContext,MainGirisSonrasi::class.java)
             startActivity(intent)
         }
-
+      binding.mesaj.setOnClickListener {
+        intent = Intent(applicationContext,MainMesaj::class.java)
+         startActivity(intent)
+         }
     }
 }
